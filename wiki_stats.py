@@ -20,7 +20,10 @@ class WikiGraph:
         print('Загружаю граф из файла: ' + filename)
 
         with open(filename) as f:
-            (n, _nlinks) = (0, 0) # TODO: прочитать из файла
+            #(n, _nlinks) = (0, 0) # TODO: прочитать из файла
+            for line in filename:
+                if len(line
+                n,_nlinks=int(line().split())
             
             self._titles = []
             self._sizes = array.array('L', [0]*n)
